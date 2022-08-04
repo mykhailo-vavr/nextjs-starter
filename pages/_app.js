@@ -1,7 +1,10 @@
 import '../styles/globals.css'
+import 'antd/dist/antd.css'
+import { Layout } from 'antd'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
-
-export default MyApp
+const App = ({ Component, pageProps }) => (
+  <Layout>
+    <Component {...pageProps} />
+  </Layout>
+)
+export default App
