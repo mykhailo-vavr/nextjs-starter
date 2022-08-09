@@ -1,3 +1,67 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next/core-web-vitals", "airbnb", "plugin:prettier/recommended", "eslint-config-prettier", "prettier"],
+  "plugins": ["react", "prettier", "react-hooks"],
+  "rules": {
+    "react/state-in-constructor": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "react/jsx-boolean-value": "off",
+    "react/no-array-index-key": "off",
+    "react/require-default-props": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/destructuring-assignment": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
+    "react/no-string-refs": ["off", { "noTemplateLiterals": true }],
+    "react/prefer-stateless-function": ["off", { "ignorePureComponents": true }],
+    "react/prop-types": "off",
+    "import/no-cycle": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/no-unresolved": "off",
+    "import/no-named-as-default": "off",
+    "import/prefer-default-export": "off",
+    "no-useless-return": "off",
+    "no-useless-computed-key": "off",
+    "no-param-reassign": "off",
+    "no-shadow": "off",
+    "no-underscore-dangle": "off",
+    "jsx-a11y/control-has-associated-label": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 5 }],
+    "prefer-destructuring": [
+      "error",
+      {
+        "array": true,
+        "object": true
+      },
+      {
+        "enforceForRenamedProperties": false
+      }
+    ],
+    "prefer-const": "error",
+    "prettier/prettier": ["error"],
+    "camelcase": "off",
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "only-multiline",
+        "objects": "only-multiline",
+        "imports": "only-multiline",
+        "exports": "only-multiline",
+        "functions": "only-multiline"
+      }
+    ],
+    "max-classes-per-file": ["error", 5],
+    "max-len": [2, { "code": 500, "ignoreUrls": true }],
+    "quotes": [2, "single", { "avoidEscape": true }],
+    "consistent-return": "off",
+    "arrow-body-style": ["error", "as-needed"]
+  }
 }
