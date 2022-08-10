@@ -1,6 +1,6 @@
 import '../styles/globals.css'
 import 'antd/dist/antd.css'
-import { Layout } from 'antd'
+import Layout from '../components/layout'
 
 const App = ({ Component, pageProps }) => (
   <Layout>
