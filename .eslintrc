@@ -1,0 +1,48 @@
+{
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "airbnb",
+    "airbnb-typescript",
+    "plugin:react/recommended",
+    "plugin:import/warnings",
+    "plugin:import/errors",
+    "plugin:jsx-a11y/recommended",
+    "prettier",
+    "plugin:prettier/recommended",
+    "eslint-config-prettier"
+  ],
+  "plugins": ["react", "@typescript-eslint", "react-hooks", "jsx-a11y", "prettier", "import"],
+  "rules": {
+    "react/jsx-props-no-spreading": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "prefer-destructuring": [
+      "error",
+      {
+        "array": false,
+        "object": true
+      },
+      {
+        "enforceForRenamedProperties": false
+      }
+    ],
+    "arrow-body-style": ["error", "as-needed"],
+    "no-console": ["error", { "allow": ["warn", "error", "info"] }],
+    "import/prefer-default-export": "off",
+    "no-plusplus": "off",
+    "no-continue": "off",
+    "react/prop-types": "off",
+    "no-param-reassign": "off"
+  }
+}
