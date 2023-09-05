@@ -1,3 +1,5 @@
+'use client';
+
 import { useCallback, useEffect, useState } from 'react';
 import { ExtendedApiRoute, RequestConfig, RequestError } from '../types';
 import { apiClient } from '../client';

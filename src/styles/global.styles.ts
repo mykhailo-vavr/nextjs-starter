@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import { Inter } from '@next/font/google';
+import { Inter } from 'next/font/google';
 import { antdStyles } from './ant.styles';
 
 const inter = Inter({ subsets: ['latin'] });

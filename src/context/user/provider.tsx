@@ -1,3 +1,5 @@
+'use client';
+
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { tokenService } from '@/services';
 import { userService } from '@/api/services';

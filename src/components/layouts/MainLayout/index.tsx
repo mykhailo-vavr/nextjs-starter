@@ -1,3 +1,5 @@
+'use client';
+
 import { Header } from '@/components/UI/organisms';
 import { Wrapper, Content } from './styles';
 import { MainLayoutFC } from './types';

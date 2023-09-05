@@ -1,3 +1,5 @@
+'use client';
+
 import { Link } from '@/components/UI/atoms';
 import { webRoutes } from '@/settings';
 import { LandingFC } from './types';

@@ -1,14 +1,21 @@
+'use client';
+
 import { useCallback } from 'react';
 import { WebRoute } from '@/types';
-import { useRouter } from 'next/router';
+import { notFound, useRouter } from 'next/navigation';
+import { webRoutes } from '@/settings';
 
 export const useRedirect = () => {
-  const { push } = useRouter();
+  const router = useRouter();
 
   return useCallback(
     (webRoute?: WebRoute) => {
-      push(webRoute || '/').catch(console.error);
+      if (webRoute === webRoutes.public.ERROR_404) {
+        notFound();
+      }
+
+      router.push(webRoute || '/');
     },
-    [push],
+    [router],
   );
 };

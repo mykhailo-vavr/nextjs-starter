@@ -1,3 +1,5 @@
+'use client';
+
 import { useUser } from '@/hooks';
 import { Descriptions } from '@/components/UI/molecules';
 import { DescriptionsItem } from '@/components/UI/atoms';

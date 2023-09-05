@@ -1,3 +1,5 @@
+'use client';
+
 import { useCallback, useState, Dispatch, SetStateAction } from 'react';
 
 export const useToggle = (initialState = false): [boolean, () => void, Dispatch<SetStateAction<boolean>>] => {

@@ -1,3 +1,3 @@
-import { AppPropsWithLayout, FC } from '@/types';
+import { FCWithChildren } from '@/types';
 
-export type AppFC = FC<AppPropsWithLayout>;
+export type AppFC = FCWithChildren;

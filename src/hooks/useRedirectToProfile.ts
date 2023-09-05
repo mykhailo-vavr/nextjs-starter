@@ -1,3 +1,5 @@
+'use client';
+
 import { webRoutes } from '@/settings';
 import { useUser } from './useUser';
 import { useRedirect } from './useRedirect';

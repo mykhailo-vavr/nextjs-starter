@@ -1,3 +1,5 @@
+'use client';
+
 import { useForm, useFormFieldsSchema, useRedirect, useToggle, useYupSchema } from '@/hooks';
 import { Form } from '@/components/UI/organisms';
 import { FormItem } from '@/components/UI/molecules';

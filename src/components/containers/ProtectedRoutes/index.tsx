@@ -1,14 +1,16 @@
+'use client';
+
 import { useEffect, useMemo, useState } from 'react';
 import { useRedirect, useSignOut, useUser } from '@/hooks';
 import { webRoutes } from '@/settings';
 import { FCWithChildren, PublicWebRoute, ReactElement } from '@/types';
 import { tokenService } from '@/services';
 import { authenticationService } from '@/api';
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 
 const ProtectedRoutes: FCWithChildren = ({ children }) => {
   const { isAuthenticated } = useUser();
-  const { pathname } = useRouter();
+  const pathname = usePathname();
   const redirect = useRedirect();
   const signOut = useSignOut();
   const [loading, setLoading] = useState(false);

@@ -1,3 +1,5 @@
+'use client';
+
 import { Wrapper } from './styles';
 import { Error404FC } from './types';
 

@@ -1,3 +1,5 @@
+'use client';
+
 import { useUserContext } from '@/context/user';
 import { tokenService } from '@/services';
 import { useMemo } from 'react';
